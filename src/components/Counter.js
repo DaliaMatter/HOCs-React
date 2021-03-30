@@ -1,7 +1,6 @@
 import React from 'react'
 
 const UpdatedComp = OriginalComp => {
-   
     class NewComp extends React.Component {
        constructor(props) {
            super(props);
@@ -20,6 +19,7 @@ const UpdatedComp = OriginalComp => {
                <OriginalComp
                    count={this.state.count}
                    incrementHandler={this.incrementHandler}
+                   {...this.props}
                />
            );
        }
